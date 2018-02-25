@@ -1,0 +1,26 @@
+{
+  "name": "react-inline-script",
+  "version": "1.0.0",
+  "description": "Inject arbitrary javascript and inline <script> tags into your DOM without any hassle",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bberak/react-inline-script.git"
+  },
+  "keywords": [
+    "React",
+    "JS",
+    "inline",
+    "script",
+    "noscript"
+  ],
+  "author": "Boris Berak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bberak/react-inline-script/issues"
+  },
+  "homepage": "https://github.com/bberak/react-inline-script#readme"
+}
