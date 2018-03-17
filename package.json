@@ -1,7 +1,7 @@
 {
   "name": "react-inline-script",
   "version": "1.0.0",
-  "description": "Inject arbitrary javascript and inline <script> tags into your DOM without any hassle",
+  "description": "Inject arbitrary javascript and inline <script> tags into your DOM without any headaches",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -24,14 +24,12 @@
   },
   "homepage": "https://github.com/bberak/react-inline-script#readme",
   "devDependencies": {
-    "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "jest": "^22.4.2",
     "react": "*",
-    "react-test-renderer": "^16.2.0",
-    "regenerator-runtime": "^0.11.1"
+    "react-test-renderer": "^16.2.0"
   }
 }
