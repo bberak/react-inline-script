@@ -1,5 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders correctly with a src property and without any source code 1`] = `
+<script
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "",
+    }
+  }
+  src="https://localhost/some-script.js"
+/>
+`;
+
 exports[`renders correctly with complex, quoted multiline text as a child 1`] = `
 <script
   dangerouslySetInnerHTML={

@@ -9,6 +9,13 @@ it('renders correctly without any source code', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders correctly with a src property and without any source code', () => {
+  const tree = renderer
+    .create(<Script src="https://localhost/some-script.js" />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it('renders correctly with unquoted singleline text as a child', () => {
   const tree = renderer
     .create(<Script>alert("Howdy")</Script>)

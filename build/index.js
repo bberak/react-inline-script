@@ -106,7 +106,7 @@ var Script = function (_Component) {
 	_createClass(Script, [{
 		key: "render",
 		value: function render() {
-			var src = this.props.children || this.props.src || this.props.source || "";
+			var src = this.props.children || this.props.body || "";
 			var props = _extends({}, this.props, {
 				children: null,
 				dangerouslySetInnerHTML: { __html: src }
