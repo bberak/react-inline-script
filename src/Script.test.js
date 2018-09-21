@@ -9,9 +9,36 @@ it('renders correctly without any source code', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('renders correctly with unquoted text as a child', () => {
+it('renders correctly with unquoted singleline text as a child', () => {
   const tree = renderer
     .create(<Script>alert("Howdy")</Script>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders correctly with quoted multiline text as a child', () => {
+  const tree = renderer
+    .create(
+	<Script>
+		{`
+			alert("Howdy")
+			console.log("how is it going")
+		`}
+	</Script>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders correctly with complex, quoted multiline text as a child', () => {
+  const tree = renderer
+    .create(
+	<Script>
+		{`
+			const test = true
+			if (true)
+				alert("Howdy")
+		`}
+	</Script>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

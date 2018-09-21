@@ -1,6 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly with unquoted text as a child 1`] = `
+exports[`renders correctly with complex, quoted multiline text as a child 1`] = `
+<script
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "
+			const test = true
+			if (true)
+				alert(\\"Howdy\\")
+		",
+    }
+  }
+/>
+`;
+
+exports[`renders correctly with quoted multiline text as a child 1`] = `
+<script
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "
+			alert(\\"Howdy\\")
+			console.log(\\"how is it going\\")
+		",
+    }
+  }
+/>
+`;
+
+exports[`renders correctly with unquoted singleline text as a child 1`] = `
 <script
   dangerouslySetInnerHTML={
     Object {
