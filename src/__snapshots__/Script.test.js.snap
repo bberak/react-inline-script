@@ -1,6 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`renders correctly with unquoted text as a child 1`] = `
+<script
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "alert(\\"Howdy\\")",
+    }
+  }
+/>
+`;
+
+exports[`renders correctly without any source code 1`] = `
 <script
   dangerouslySetInnerHTML={
     Object {
